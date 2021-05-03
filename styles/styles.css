@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap');
+
+/**
+ * Local styles
+ */
+@import url('./typography.css');
+
+:root {
+  --grayscale-background: #11152A;
+  --grayscale-border: #505363;
+  --grayscale-title: #404D8F;
+  --grayscale-text: #7E8AC7;
+  --grayscale-input: #0D1021;
+  --grayscale-input-background: #C5C8DD;
+
+  --info-default: #118AB2;
+  --info-dark: #0D637F;
+  --info-light: #199EFF;
+  
+  --success-default: #06D6A0;
+  --success-dark: #05A379;
+  --success-light: #06D6D6;
+
+  --error-default: #EF476F;
+  --error-dark: #BD3957;
+  --error-light: #F291A8;
+
+  --warning-default: #FFD166;
+  --warning-dark: #806933;
+  --warning-light: #FFE8B3;
+
+  --box-radius-small: 16px;
+  --box-radius-medium: 24px;
+  --box-radius-large: 32px;
+}
+
+body {
+  background-color: var(--grayscale-background);
+}

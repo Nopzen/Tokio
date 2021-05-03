@@ -1,0 +1,44 @@
+:root {
+  --font-family: 'Poppins', sans-serif;
+
+  --font-display-large-font-size: 64px;
+  --font-display-medium-font-size: 48px;
+  --font-display-small-font-size: 32px;
+  --font-text-large-font-size: 24px;
+  --font-text-medium-font-size: 18px;
+  --font-text-small-font-size: 16px;
+  
+  --font-display-medium-line-height: 50px;
+  --font-display-large-line-height: 66px;
+  --font-display-small-line-height: 34px;
+  --font-text-x-small-font-size: 14px;
+  --font-text-large-line-height: 38px;
+  --font-text-medium-line-height: 34px;
+  --font-text-small-line-height: 28px;
+  --font-text-x-small-line-height: 24px;
+
+  --font-text-weight-light: 100;
+  --font-text-weight-normal: 400;
+  --font-text-weight-semi-bold: 600;
+  --font-text-weight-bold: 600;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --font-display-large-font-size: 48px;
+    --font-display-medium-font-size: 32px;
+    --font-display-small-font-size: 24px;
+    --font-text-large-font-size: 20px;
+    --font-text-medium-font-size: 16px;
+    --font-text-small-font-size: 14px;
+    --font-text-x-small-font-size: 13px;
+    
+    --font-display-large-line-height: 50px;
+    --font-display-medium-line-height: 36px;
+    --font-display-small-line-height: 32px;
+    --font-text-large-line-height: 32px;
+    --font-text-medium-line-height: 28px;
+    --font-text-small-line-height: 24px;
+    --font-text-x-small-line-height: 22px;
+  }
+}
