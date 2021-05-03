@@ -12,11 +12,12 @@
   --grayscale-text: #7E8AC7;
   --grayscale-input: #0D1021;
   --grayscale-input-background: #C5C8DD;
+  --grayscale-white: #FFFFFF;
 
   --info-default: #118AB2;
   --info-dark: #0D637F;
   --info-light: #199EFF;
-  
+
   --success-default: #06D6A0;
   --success-dark: #05A379;
   --success-light: #06D6D6;
