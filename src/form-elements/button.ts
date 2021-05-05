@@ -47,7 +47,6 @@ export class TokioButton extends LitElement {
         font-family: var(--font-family);
         font-size: var(--font-text-medium-font-size);
         line-height: var(--font-text-medium-line-height);
-        text-decoration: none;
         cursor: pointer;
       }
 
