@@ -9,6 +9,8 @@ export class TokioAlert extends LitElement {
     | 'error'
     | 'warning' = 'info';
 
+  @property({ type: Boolean }) outlined?: boolean;
+
   @property({ type: Boolean }) closeable?: boolean;
 
   @property({ type: String }) closeLabel?: string;
@@ -30,6 +32,10 @@ export class TokioAlert extends LitElement {
 
       :host([aria-hidden='true']) {
         visibility: hidden;
+      }
+
+      :host([outlined]) > div {
+        background-color: transparent;
       }
 
       div {
@@ -70,6 +76,10 @@ export class TokioAlert extends LitElement {
       .info button {
         color: var(--grayscale-white);
       }
+      :host([outlined]) .info,
+      :host([outlined]) .info button {
+        color: var(--info-default);
+      }
 
       .success {
         background-color: var(--success-default);
@@ -78,6 +88,10 @@ export class TokioAlert extends LitElement {
       }
       .success button {
         color: var(--grayscale-white);
+      }
+      :host([outlined]) .success,
+      :host([outlined]) .success button {
+        color: var(--success-default);
       }
 
       .error {
@@ -88,6 +102,10 @@ export class TokioAlert extends LitElement {
       .error button {
         color: var(--grayscale-white);
       }
+      :host([outlined]) .error,
+      :host([outlined]) .error button {
+        color: var(--error-default);
+      }
 
       .warning {
         background-color: var(--warning-default);
@@ -96,6 +114,10 @@ export class TokioAlert extends LitElement {
       }
       .warning button {
         color: var(--warning-dark);
+      }
+      :host([outlined]) .warning,
+      :host([outlined]) .warning button {
+        color: var(--warning-default);
       }
     `;
   }

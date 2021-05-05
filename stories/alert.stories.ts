@@ -22,6 +22,11 @@ export default {
         type: 'boolean',
       },
     },
+    outlined: {
+      control: {
+        type: 'boolean',
+      },
+    },
   },
 };
 
@@ -36,16 +41,22 @@ interface ArgTypes {
   variant: 'info' | 'success' | 'error' | 'warning';
   close?: () => void;
   closeable: boolean;
+  outlined: boolean;
 }
 
 const Template: Story<ArgTypes> = ({
   label = 'I Am C-3PO, Human/Cyborg Relations. And You Are?',
   variant = 'info',
   closeable = false,
+  outlined = false,
   close = () => alert('tokio-alert close callback called'),
 }: ArgTypes) => html`
   <div style="width: 600px;">
-    <tokio-alert .variant=${variant} .close=${closeable ? close : undefined}>
+    <tokio-alert
+      ?outlined=${outlined}
+      .variant=${variant}
+      .close=${closeable ? close : undefined}
+    >
       ${label}
     </tokio-alert>
   </div>
@@ -53,6 +64,11 @@ const Template: Story<ArgTypes> = ({
 
 export const Default = Template.bind({});
 Default.args = {};
+
+export const Outlined = Template.bind({});
+Outlined.args = {
+  outlined: true,
+};
 
 export const Closeable = Template.bind({});
 Closeable.args = {
