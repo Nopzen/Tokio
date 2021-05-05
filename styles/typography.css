@@ -77,6 +77,9 @@ h1.bold, h2.bold, h3.bold, p.bold {
   font-weight: var(--font-text-weight-bold);
 }
 
+h1, h2, h3 { margin: 0 0 32px; }
+p { margin: 0 0 16px; }
+
 a {
   color: var(--info-default);
 }
