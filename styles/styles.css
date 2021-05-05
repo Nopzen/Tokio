@@ -37,4 +37,6 @@
 
 body {
   background-color: var(--grayscale-background);
+  font-family: var(--font-family);
+  color: var(--grayscale-text);
 }
