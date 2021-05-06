@@ -4,7 +4,7 @@ echo "Remove old 'public' artifacts"
 rm -rf ./_site ./dist
 
 echo "Building new artifacts"
-yarn build
+yarn prepublish
 
 mkdir ./_site
 cp index.html ./_site/index.html
