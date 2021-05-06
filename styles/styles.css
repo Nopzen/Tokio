@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap');
 
-/**
- * Local styles
- */
-@import url('./typography.css');
-
 :root {
   --grayscale-background: #11152A;
   --grayscale-border: #505363;
@@ -33,10 +28,98 @@
   --box-radius-small: 16px;
   --box-radius-medium: 24px;
   --box-radius-large: 32px;
+
+  --font-family: 'Poppins', sans-serif;
+
+  --font-display-large-font-size: 64px;
+  --font-display-medium-font-size: 48px;
+  --font-display-small-font-size: 32px;
+  --font-text-large-font-size: 24px;
+  --font-text-medium-font-size: 18px;
+  --font-text-small-font-size: 16px;
+  --font-text-x-small-font-size: 14px;
+  
+  --font-display-large-line-height: 76px;
+  --font-display-medium-line-height: 60px;
+  --font-display-small-line-height: 44px;
+  --font-text-large-line-height: 36px;
+  --font-text-medium-line-height: 30px;
+  --font-text-small-line-height: 28px;
+  --font-text-x-small-line-height: 26px;
+
+  --font-text-weight-normal: 400;
+  --font-text-weight-bold: 600;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --font-display-large-font-size: 48px;
+    --font-display-medium-font-size: 32px;
+    --font-display-small-font-size: 24px;
+    --font-text-large-font-size: 20px;
+    --font-text-medium-font-size: 16px;
+    --font-text-small-font-size: 14px;
+    --font-text-x-small-font-size: 13px;
+    
+    --font-display-large-line-height: 50px;
+    --font-display-medium-line-height: 36px;
+    --font-display-small-line-height: 32px;
+    --font-text-large-line-height: 32px;
+    --font-text-medium-line-height: 28px;
+    --font-text-small-line-height: 24px;
+    --font-text-x-small-line-height: 22px;
+  }
 }
 
 body {
   background-color: var(--grayscale-background);
   font-family: var(--font-family);
   color: var(--grayscale-text);
+}
+
+h1 {
+  font-size: var(--font-display-large-font-size);
+  line-height: var(--font-display-large-line-height);
+}
+h2 {
+  font-size: var(--font-display-medium-font-size);
+  line-height: var(--font-display-medium-line-height);
+}
+h3 {
+  font-size: var(--font-display-small-font-size);
+  line-height: var(--font-display-small-line-height);
+}
+p.large {
+  font-size: var(--font-text-large-font-size);
+  line-height: var(--font-text-large-line-height);
+}
+p {
+  font-size: var(--font-text-medium-font-size);
+  line-height: var(--font-text-medium-line-height);
+}
+p.small {
+  font-size: var(--font-text-small-font-size);
+  line-height: var(--font-text-small-line-height);
+}
+p.xsmall {
+  font-size: var(--font-text-x-small-font-size);
+  line-height: var(--font-text-x-small-line-height);
+}
+
+h1, h2, h3, p {
+  font-weight: var(--font-text-weight-normal);
+}
+h1.bold, h2.bold, h3.bold, p.bold {
+  font-weight: var(--font-text-weight-bold);
+}
+
+h1, h2, h3 { margin: 0 0 32px; }
+p { margin: 0 0 16px; }
+
+a {
+  color: var(--info-default);
+}
+
+a:visited {
+  text-decoration: line-through;
 }
