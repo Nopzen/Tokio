@@ -1,0 +1,37 @@
+{
+  "name": "@tokio/tokio",
+  "version": "1.0.0",
+  "description": "Tokio web components",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "test",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "start:watch": "web-dev-server --open demo/ --node-resolve --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/nopzen/tokio"
+  },
+  "keywords": [
+    "Typescript",
+    "Design",
+    "Web",
+    "Components",
+    "UI",
+    "UX",
+    "Javascript"
+  ],
+  "author": "Lars Krieger <github@larskrieger.io>",
+  "license": "MIT",
+  "dependencies": {
+    "lit": "^2.0.0"
+  },
+  "devDependencies": {
+    "@open-wc/testing": "^2.5.33",
+    "@web/dev-server": "^0.1.24",
+    "@web/test-runner": "^0.13.18",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.3"
+  }
+}

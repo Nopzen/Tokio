@@ -1,0 +1,29 @@
+:root {
+        /* Color scheme for info/primary */
+    --color-info-base: rgb(17, 138, 178);
+    --color-info-dark: rgb(13, 99, 127);
+    --color-info-light: rgb(25, 158, 255);
+
+    /* Color scheme for success */
+    --color-success-base: rgb(6, 214, 160);
+    --color-success-dark: rgb(5, 163, 121);
+    --color-success-light: rgb(74, 241, 241);
+
+    /* Color scheme for error */
+    --color-error-base: rgb(239, 71, 111);
+    --color-error-dark: rgb(189, 57, 87);
+    --color-error-light: rgb(242, 145, 168);
+
+    /* Color scheme for warning */
+    --color-warning-base: rgb(255, 209, 102);
+    --color-warning-dark: rgb(128, 105, 51);
+    --color-warning-light: rgb(255, 232, 179);
+
+    /* Color greyscale */
+    --color-background: rgb(16, 19, 35);
+    --color-header: rgb(64, 77, 143);
+    --color-paragraph: rgb(126, 138, 199);
+    --color-border: rgb(83, 83, 99);
+    --color-white: rgb(255, 255, 255);
+    --color-input-background: rgb(197, 200, 221);
+}

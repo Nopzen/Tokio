@@ -1,0 +1,22 @@
+:root {
+    /* Font Family */
+    --font-family: 'Poppins', sans-serif;
+    
+    /* Font sizing headers */
+    --font-size-header-large: 64px;
+    --font-size-header-medium: 48px;
+    --font-size-header-small: 32px;
+    --line-height-header-large: 76px;
+    --line-height-header-medium: 60px;
+    --line-height-header-small: 44px;
+
+    /* Font sizing text */
+    --font-size-text-large: 24px;
+    --font-size-text-medium: 18px;
+    --font-size-text-small: 16px;
+    --font-size-text-xsmall: 14px;
+    --line-height-text-large: 36px;
+    --line-height-text-medium: 30px;
+    --line-height-text-small: 28px;
+    --line-height-text-xsmall: 26px;
+}

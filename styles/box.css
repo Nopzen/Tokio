@@ -1,0 +1,8 @@
+:root {
+    --box-padding-large: 24px;
+    --box-padding-medium: 18px;
+    --box-padding-small: 16px;
+    --box-padding-xsmall: 14px;
+    --box-border-radius-round: 100px;
+    --box-border-radius-square: 5px;
+}

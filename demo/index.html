@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@tokio/tokio ui components</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../styles/core.css" />
+
+    <script type="module" src="../dist/components/header/tokio-header.js"></script>
+    <script type="module" src="../dist/components/text/tokio-text.js"></script>
+    <script type="module" src="../dist/components/button/tokio-button.js"></script>
+    <script type="module" src="../dist/components/pill/tokio-pill.js"></script>
+    <script type="module" src="../dist/components/badge/tokio-badge.js"></script>
+</head>
+<body>
+    <main>
+        <tokio-header weight="bold" size="large">&lt;tokio-components/&gt;</tokio-header>
+        <tokio-header size="small">
+            A lightweight close to zero dependency web components,
+            design system.
+        </tokio-header>
+        <tokio-text>
+            The goal of tokio components, is to give a light weight, easy to use
+            set of components, that would get you started with your web applications.
+        </tokio-text>
+        <div class="row">
+            <tokio-button variant="info">Info button</tokio-button>
+            <tokio-button variant="info" variant-style="outline">Info button</tokio-button>
+        </div>
+        <div class="row">
+            <tokio-button variant="success">Success button</tokio-button>
+            <tokio-button variant="success" variant-style="outline">Success button</tokio-button>
+        </div>
+        <div class="row">
+            <tokio-button variant="error">Error button</tokio-button>
+            <tokio-button variant="error" variant-style="outline">Error button</tokio-button>
+        </div>
+        <div class="row">
+            <tokio-button variant="warning">Warning button</tokio-button>
+            <tokio-button variant="warning" variant-style="outline">Warning button</tokio-button>
+        </div>
+        <div class="row">
+            <tokio-pill variant="info">info pill</tokio-pill>
+            <tokio-pill variant="success">success pill</tokio-pill>
+            <tokio-pill variant="error">error pill</tokio-pill>
+            <tokio-pill variant="warning">Warning pill</tokio-pill>
+        </div>
+        <div class="row">
+            <tokio-pill variant="info" variant-style="outline">info pill</tokio-pill>
+            <tokio-pill variant="success" variant-style="outline">success pill</tokio-pill>
+            <tokio-pill variant="error" variant-style="outline">error pill</tokio-pill>
+            <tokio-pill variant="warning" variant-style="outline">Warning pill</tokio-pill>
+        </div>
+        <div class="row">
+            <tokio-badge variant="info">info badge</tokio-badge>
+            <tokio-badge variant="success">success badge</tokio-badge>
+            <tokio-badge variant="error">error badge</tokio-badge>
+            <tokio-badge variant="warning">Warning badge</tokio-badge>
+        </div>
+        <div class="row">
+            <tokio-badge variant="info" variant-style="outline">info badge</tokio-badge>
+            <tokio-badge variant="success" variant-style="outline">success badge</tokio-badge>
+            <tokio-badge variant="error" variant-style="outline">error badge</tokio-badge>
+            <tokio-badge variant="warning" variant-style="outline">Warning badge</tokio-badge>
+        </div>
+    </main>
+</body>
+</html>
