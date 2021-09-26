@@ -9,6 +9,7 @@ import { Variant, VariantStyle } from "../../@types/enums";
 export class TokioPill extends LitElement {
     @property({ type: String }) variant: Variant = Variant.Info
     @property({ type: String, attribute: "variant-style" }) variantStyle: VariantStyle = VariantStyle.Solid;
+    @property({ type: Boolean }) clickable: boolean = false;
 
     static get styles() {
         return css`
@@ -23,11 +24,15 @@ export class TokioPill extends LitElement {
                 font-size: var(--font-size-text-xsmall);
                 line-height: 0;
                 color: var(--color-white);
-                cursor: pointer;
+                cursor: default;
             }
-
+            
             div.outline {
                 background-color: transparent;
+            }
+            
+            div.clickable {
+                cursor: pointer;
             }
 
             .info {
@@ -70,6 +75,7 @@ export class TokioPill extends LitElement {
         return {
             [this.variant]: true,
             [this.variantStyle]: true,
+            "clickable": this.clickable
         }
     }
 
