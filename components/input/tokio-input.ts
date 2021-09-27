@@ -35,7 +35,7 @@ export class TokioInput extends LitElement {
             }
 
             input:not(.empty) ~ label {
-                transform: scale(.6) translate(calc((var(--box-padding-small) * -1) + 4px), calc((var(--box-padding-medium) * -1) - 2px));
+                transform: scale(.6) translate(calc((var(--box-padding-large) * -1) - 1px), calc((var(--box-padding-medium) * -1) - 2px));
                 transition: transform .2s ease-in-out;
             }
             
@@ -49,7 +49,7 @@ export class TokioInput extends LitElement {
             
             input:focus ~ label,
             input:focus ~ label {
-                transform: scale(.6) translate(calc((var(--box-padding-large) * -1)), calc((var(--box-padding-medium) * -1) - 2px));
+                transform: scale(.6) translate(calc((var(--box-padding-large) * -1) - 1px), calc((var(--box-padding-medium) * -1) - 2px));
                 transition: transform .2s ease-in-out;
             }
         `    
