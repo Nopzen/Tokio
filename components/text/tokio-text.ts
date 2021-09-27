@@ -3,11 +3,11 @@ import { customElement } from "lit/decorators/custom-element.js"
 import { property } from "lit/decorators/property.js"
 import { classMap } from 'lit/directives/class-map.js';
 
-import { FontWeight, HeaderSize } from "../../@types/enums";
+import { FontWeight, TextSize } from "../../@types/enums";
 
 @customElement("tokio-text")
 export class TokioText extends LitElement {
-    @property({ type: String }) size: HeaderSize = HeaderSize.Medium
+    @property({ type: String }) size: TextSize = TextSize.Medium
     @property({ type: String }) weight: FontWeight = FontWeight.Normal
 
     static get styles() {
