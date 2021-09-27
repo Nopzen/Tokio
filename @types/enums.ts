@@ -13,7 +13,7 @@ export enum TextSize {
     Large = "large",
     Medium = "medium",
     Small = "small",
-    Xsmall = "Xsmall",
+    Xsmall = "xsmall",
 }
 
 export enum Variant {
