@@ -1,0 +1,59 @@
+/* Utils */
+
+.bold {
+    font-weight: bold;
+}
+
+.normal {
+    font-weight: normal;
+}
+
+/* Paragraph styles */
+
+h1 {
+    font-size: var(--font-size-header-large);
+    line-height: var(--line-height-header-large);
+    margin-bottom: calc(var(--line-height-header-large) / 2);
+}
+
+h2 {
+    font-size: var(--font-size-header-medium);
+    line-height: var(--line-height-header-medium);
+    margin-bottom: calc(var(--line-height-header-medium) / 2);
+}
+
+h3 {
+    font-size: var(--font-size-header-small);
+    line-height: var(--line-height-header-small);
+    margin-bottom: calc(var(--line-height-header-small) / 2);
+}
+
+h4 {
+    font-size: var(--font-size-text-large);
+    line-height: var(--line-height-text-large);
+    margin-bottom: calc(var(--line-height-text-large) / 2);
+    font-weight: normal;
+}
+
+h5 {
+    font-size: var(--font-size-text-medium);
+    line-height: var(--line-height-text-medium);
+    margin-bottom: calc(var(--line-height-text-medium) / 2);
+    font-weight: normal;
+}
+
+p {
+    font-size: var(--font-size-text-small);
+    line-height: var(--line-height-text-small);
+    margin-bottom: calc(var(--line-height-text-small) / 2);
+}
+
+small {
+    font-size: var(--font-size-text-xsmall);
+    line-height: var(--line-height-text-xsmall);
+    margin-bottom: calc(var(--line-height-text-xsmall) / 2);
+}
+
+p > small {
+    margin-bottom: 0;
+}
