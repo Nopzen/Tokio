@@ -1,0 +1,61 @@
+.tokio-button {
+    display: block;
+    width: 100%;
+    padding: var(--box-padding-medium);
+    margin-bottom: var(--box-padding-medium);
+    border-radius: var(--box-border-radius-round);
+    border-width: 3px;
+    border-style: solid;
+    font-family: var(--font-family);
+    font-size: var(--font-size-text-medium);
+    line-height: 0;
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.tokio-button:active {
+    opacity: 0.8;
+}
+
+.tokio-button.outline {
+    background-color: transparent;
+}
+
+.tokio-button.inline {
+    display: inline-block;
+    width: auto;
+}
+
+.tokio-button.info {
+    background-color: var(--color-info-base);
+    border-color: var(--color-info-dark);
+}
+.tokio-button.info.outline {
+    color: var(--color-info-base);
+    border-color: var(--color-info-base);
+}
+.tokio-button.success {
+    background-color: var(--color-success-base);
+    border-color: var(--color-success-dark);
+}
+.tokio-button.success.outline {
+    color: var(--color-success-base);
+    border-color: var(--color-success-base);
+}
+.tokio-button.error {
+    background-color: var(--color-error-base);
+    border-color: var(--color-error-dark);
+}
+.tokio-button.error.outline {
+    color: var(--color-error-base);
+    border-color: var(--color-error-base);
+}
+.tokio-button.warning {
+    background-color: var(--color-warning-base);
+    border-color: var(--color-warning-dark);
+    color: var(--color-warning-dark);
+}
+.tokio-button.warning.outline {
+    color: var(--color-warning-base);
+    border-color: var(--color-warning-base);
+}
