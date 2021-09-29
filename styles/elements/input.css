@@ -1,0 +1,41 @@
+.input-control {
+    position: relative;
+}
+
+.input-control > input {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    border-radius: var(--box-border-radius-round);
+    padding: var(--box-padding-medium) var(--box-padding-medium) calc(var(--box-padding-small) / 2);
+    border: none;
+    margin-bottom: var(--box-padding-small)
+}
+
+.input-control > input:focus {
+    outline: none;
+}
+
+.input-control > input:not(.empty) ~ label {
+    transform: scale(.6) translate(calc((var(--box-padding-large) * -1) - 4px), calc((var(--box-padding-medium) * -1) - 2px));
+    transition: transform .2s ease-in-out;
+}
+
+.input-control > label {
+    position: absolute;
+    font-size: var(--font-size-text-small);
+    z-index: 2;
+    top: calc(var(--box-padding-xsmall) / 2);
+    left: var(--box-padding-medium);
+}
+
+.input-control > input:focus ~ label,
+.input-control > input:focus ~ label {
+    transform: scale(.6) translate(calc((var(--box-padding-large) * -1) - 20px), calc((var(--box-padding-medium) * -1) - 2px));
+    transition: transform .2s ease-in-out;
+}
+
+.input-control > .feedback {
+    margin-top: calc(var(--box-padding-xsmall) * -1);
+    margin-left: var(--box-padding-medium);
+}
