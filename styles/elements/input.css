@@ -1,8 +1,8 @@
-.input-control {
+.tokio-input {
     position: relative;
 }
 
-.input-control > input {
+.tokio-input > input {
     position: relative;
     width: 100%;
     z-index: 1;
@@ -12,16 +12,16 @@
     margin-bottom: var(--box-padding-small)
 }
 
-.input-control > input:focus {
+.tokio-input > input:focus {
     outline: none;
 }
 
-.input-control > input:not(.empty) ~ label {
+.tokio-input > input:not(.empty) ~ label {
     transform: scale(.6) translate(calc((var(--box-padding-large) * -1) - 4px), calc((var(--box-padding-medium) * -1) - 2px));
     transition: transform .2s ease-in-out;
 }
 
-.input-control > label {
+.tokio-input > label {
     position: absolute;
     font-size: var(--font-size-text-small);
     z-index: 2;
@@ -29,13 +29,13 @@
     left: var(--box-padding-medium);
 }
 
-.input-control > input:focus ~ label,
-.input-control > input:focus ~ label {
+.tokio-input > input:focus ~ label,
+.tokio-input > input:focus ~ label {
     transform: scale(.6) translate(calc((var(--box-padding-large) * -1) - 20px), calc((var(--box-padding-medium) * -1) - 2px));
     transition: transform .2s ease-in-out;
 }
 
-.input-control > .feedback {
+.tokio-input > .feedback {
     margin-top: calc(var(--box-padding-xsmall) * -1);
     margin-left: var(--box-padding-medium);
 }
