@@ -4,7 +4,8 @@
   "description": "Tokio web components",
   "main": "dist/index.js",
   "scripts": {
-    "test": "test",
+    "test": "web-test-runner \"dist/components/**/*.test.js\" --node-resolve --puppeteer",
+    "test:watch": "web-test-runner \"dist/components/**/*.test.js\" --node-resolve --puppeteer --watch",
     "build": "tsc",
     "build:watch": "tsc --watch",
     "start:watch": "web-dev-server --open demo/ --node-resolve --watch"
@@ -28,9 +29,13 @@
     "lit": "^2.0.0"
   },
   "devDependencies": {
+    "@esm-bundle/chai": "^4.3.4-fix.0",
+    "@open-wc/semantic-dom-diff": "^0.19.4",
     "@open-wc/testing": "^2.5.33",
     "@web/dev-server": "^0.1.24",
     "@web/test-runner": "^0.13.18",
+    "@web/test-runner-puppeteer": "^0.10.2",
+    "sinon": "^11.1.2",
     "tslib": "^2.3.1",
     "typescript": "^4.4.3"
   }
