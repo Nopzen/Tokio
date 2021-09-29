@@ -1,0 +1,54 @@
+.tokio-badge {
+    display: inline-block;
+    padding: var(--box-padding-xsmall);
+    margin-bottom: var(--box-padding-xsmall);
+    border-radius: var(--box-border-radius-square);
+    border-width: 3px;
+    border-style: solid;
+    font-family: var(--font-family);
+    font-size: var(--font-size-text-xsmall);
+    line-height: 0;
+    color: var(--color-white);
+    cursor: default;
+}
+
+.tokio-badge.outline {
+    background-color: transparent !important;
+}
+.tokio-badge.clickable {
+    cursor: pointer;
+}
+
+.tokio-badge.info {
+    background-color: var(--color-info-base);
+    border-color: var(--color-info-dark);
+}
+.tokio-badge.info.outline {
+    color: var(--color-info-base);
+    border-color: var(--color-info-base);
+}
+.tokio-badge.success {
+    background-color: var(--color-success-base);
+    border-color: var(--color-success-dark);
+}
+.tokio-badge.success.outline {
+    color: var(--color-success-base);
+    border-color: var(--color-success-base);
+}
+.tokio-badge.error {
+    background-color: var(--color-error-base);
+    border-color: var(--color-error-dark);
+}
+.tokio-badge.error.outline {
+    color: var(--color-error-base);
+    border-color: var(--color-error-base);
+}
+.tokio-badge.warning {
+    background-color: var(--color-warning-base);
+    border-color: var(--color-warning-dark);
+    color: var(--color-warning-dark);
+}
+.tokio-badge.warning.outline {
+    color: var(--color-warning-base);
+    border-color: var(--color-warning-base);
+}

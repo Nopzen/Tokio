@@ -1,0 +1,55 @@
+.tokio-pill {
+    display: inline-block;
+    padding: var(--box-padding-xsmall);
+    margin-bottom: var(--box-padding-xsmall);
+    border-radius: var(--box-border-radius-round);
+    border-width: 3px;
+    border-style: solid;
+    font-family: var(--font-family);
+    font-size: var(--font-size-text-xsmall);
+    line-height: 0;
+    color: var(--color-white);
+    cursor: default;
+}
+
+.tokio-pill.outline {
+    background-color: transparent !important;
+}
+
+.tokio-pill.clickable {
+    cursor: pointer;
+}
+
+.tokio-pill.info {
+    background-color: var(--color-info-base);
+    border-color: var(--color-info-dark);
+}
+.tokio-pill.info.outline {
+    color: var(--color-info-base);
+    border-color: var(--color-info-base);
+}
+.tokio-pill.success {
+    background-color: var(--color-success-base);
+    border-color: var(--color-success-dark);
+}
+.tokio-pill.success.outline {
+    color: var(--color-success-base);
+    border-color: var(--color-success-base);
+}
+.tokio-pill.error {
+    background-color: var(--color-error-base);
+    border-color: var(--color-error-dark);
+}
+.tokio-pill.error.outline {
+    color: var(--color-error-base);
+    border-color: var(--color-error-base);
+}
+.tokio-pill.warning {
+    background-color: var(--color-warning-base);
+    border-color: var(--color-warning-dark);
+    color: var(--color-warning-dark);
+}
+.tokio-pill.warning.outline {
+    color: var(--color-warning-base);
+    border-color: var(--color-warning-base);
+}

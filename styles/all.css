@@ -4,3 +4,5 @@
 @import url("./elements/typography.css");
 @import url("./elements/input.css");
 @import url("./elements/button.css");
+@import url("./elements/badge.css");
+@import url("./elements/pill.css");
