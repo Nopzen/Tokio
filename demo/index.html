@@ -14,6 +14,7 @@
     <script type="module" src="../dist/components/pill/tokio-pill.js"></script>
     <script type="module" src="../dist/components/badge/tokio-badge.js"></script>
     <script type="module" src="../dist/components/input/tokio-input.js"></script>
+    <script type="module" src="../dist/components/alarm/tokio-alarm.js"></script>
 </head>
 <body>
     <main>
@@ -26,6 +27,18 @@
             The goal of tokio components, is to give a light weight, easy to use
             set of components, that would get you started with your web applications.
         </tokio-text>
+        <div>
+            <tokio-alarm variant="info">info alarm</tokio-alarm>
+            <tokio-alarm variant="success">success alarm</tokio-alarm>
+            <tokio-alarm variant="error">error alarm</tokio-alarm>
+            <tokio-alarm variant="warning">Warning alarm</tokio-alarm>
+        </div>
+        <div>
+            <tokio-alarm variant="info" variant-style="outline">info alarm</tokio-alarm>
+            <tokio-alarm variant="success" variant-style="outline">success alarm</tokio-alarm>
+            <tokio-alarm variant="error"variant-style="outline">error alarm</tokio-alarm>
+            <tokio-alarm variant="warning" variant-style="outline">Warning alarm</tokio-alarm>
+        </div>
         <div class="row">
             <tokio-input></tokio-input>
         </div>
